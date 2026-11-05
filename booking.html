@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Your Student Accommodation | CampusNest</title>
+<meta name="description" content="Fill in the form to reserve your student room.">
+<meta name="theme-color" content="#0a0e13">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <div class="wrap nav">
+  <a class="logo" href="index.html" aria-label="CampusNest home"><i></i>CampusNest</a>
+  <input type="checkbox" id="nav-toggle" aria-label="Toggle menu">
+  <nav class="links" aria-label="Main">
+   <a href="index.html">Homepage</a>
+   <a href="rooms.html" class="active" aria-current="page">Rooms</a>
+   <a href="about.html">About</a>
+  </nav>
+  <div class="nav-actions">
+   <a class="btn sm" href="#">Log in</a>
+   <label class="burger" for="nav-toggle" aria-label="Menu"><span></span></label>
+  </div>
+ </div>
+</header>
+<main>
+<div class="page-hero"><div class="wrap"><h1 style="font-size:clamp(2rem,4vw,3rem)">Book Your Student Accommodation</h1><p class="muted" style="margin-top:.5rem">Fill in the form below to reserve your room.</p></div></div>
+<div class="wrap booking">
+ <form action="#" method="post">
+  <div class="form-sec"><h2>Selected accommodation</h2>
+   <div class="selected"><div class="mini"><img src="https://images.unsplash.com/photo-1702255489644-392758161f1f?auto=format&fit=crop&w=1200&h=800&q=80" alt="Hilltop Single Room" width="1200" height="800"></div><div><strong>Hilltop Single Room</strong><p class="muted">Hill Station · Le 1,800 / month</p></div></div></div>
+  <div class="form-sec"><h2>Guest information</h2>
+   <div class="two" style="margin-bottom:1rem"><div><label for="fn">Full name</label><input id="fn" name="fullname" type="text" placeholder="Your name" required autocomplete="name"></div><div><label for="em">Email</label><input id="em" name="email" type="email" placeholder="name@email.com" required autocomplete="email"></div></div>
+   <div class="two"><div><label for="ph">Phone number</label><input id="ph" name="phone" type="tel" placeholder="+232 " required autocomplete="tel"></div><div><label for="sid">Student ID</label><input id="sid" name="studentid" type="text" placeholder="ID number" required></div></div></div>
+  <div class="form-sec"><h2>Booking details</h2>
+   <div class="two"><div><label for="mi">Move-in date</label><input id="mi" name="movein" type="date" required></div><div><label for="ls">Length of stay</label><select id="ls" name="stay" required><option value="">Select duration</option><option>1 semester (5 months)</option><option>2 semesters (10 months)</option><option>Full academic year (12 months)</option></select></div></div></div>
+  <div class="form-sec"><h2>Additional information</h2>
+   <label for="ai" style="position:absolute;left:-9999px">Additional information</label><textarea id="ai" name="notes" placeholder="Anything the landlord should know"></textarea></div>
+  <button class="btn" type="submit" style="padding:1rem 2.4rem">Submit booking</button>
+ </form>
+ <aside class="side">
+  <div class="photo"><img src="https://images.unsplash.com/photo-1702255489644-392758161f1f?auto=format&fit=crop&w=1200&h=800&q=80" alt="Hilltop Single Room bedroom" width="1200" height="800"></div>
+  <div class="panel"><h3>Booking summary</h3>
+   <strong>Hilltop Single Room</strong><p class="muted" style="margin-bottom:1rem">Hill Station · 5 min walk to campus</p>
+   <div class="sum-row"><span>Rent per month</span><b>Le 1,800</b></div>
+   <div class="sum-row"><span>Deposit</span><b>Le 1,800</b></div>
+   <div class="sum-total"><span>Total due</span><b>Le 3,600</b></div></div>
+ </aside>
+</div>
+</main>
+<footer class="site-footer">
+ <div class="wrap">
+  <div class="foot">
+   <a class="logo" href="index.html"><i></i>CampusNest</a>
+   <nav aria-label="Footer">
+    <a href="index.html">Homepage</a><a href="rooms.html">Rooms</a><a href="listing.html">Listing</a><a href="booking.html">Booking</a><a href="about.html">About</a>
+   </nav>
+  </div>
+  <p class="copy">© 2026 CampusNest. Student accommodation made simple. Sample listings for a design project.</p>
+ </div>
+</footer>
+</body>
+</html>

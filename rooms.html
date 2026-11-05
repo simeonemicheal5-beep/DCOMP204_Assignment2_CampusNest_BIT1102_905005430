@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browse Rooms | CampusNest</title>
+<meta name="description" content="Find verified student rooms near campus. Filter by area, price, room type and amenities.">
+<meta name="theme-color" content="#0a0e13">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <div class="wrap nav">
+  <a class="logo" href="index.html" aria-label="CampusNest home"><i></i>CampusNest</a>
+  <input type="checkbox" id="nav-toggle" aria-label="Toggle menu">
+  <nav class="links" aria-label="Main">
+   <a href="index.html">Homepage</a>
+   <a href="rooms.html" class="active" aria-current="page">Rooms</a>
+   <a href="about.html">About</a>
+  </nav>
+  <div class="nav-actions">
+   <a class="btn sm" href="#">Log in</a>
+   <label class="burger" for="nav-toggle" aria-label="Menu"><span></span></label>
+  </div>
+ </div>
+</header>
+<main>
+<div class="page-hero">
+ <div class="wrap row">
+  <div><h1 style="font-size:clamp(2rem,4vw,3rem)">Browse Rooms</h1><p class="muted" style="margin-top:.5rem">Find verified student rooms near campus</p></div>
+  <form class="searchbar" role="search" action="rooms.html"><label class="sr" for="q" style="position:absolute;left:-9999px">Search rooms</label><input id="q" type="search" name="q" placeholder="Search by name or area"></form>
+ </div>
+</div>
+<div class="wrap rooms-layout">
+ <form class="filters" action="rooms.html" method="get" aria-label="Filters">
+  <h2>Filters</h2>
+  <div><label for="area">Location</label><select id="area" name="area"><option>Select area</option><option>Hill Station</option><option>Wilberforce</option><option>Murray Town</option><option>Congo Cross</option><option>Lumley</option><option>Goderich</option></select></div>
+  <div><label for="price">Price range</label><input id="price" type="range" min="500" max="4000" step="100" value="2500"><div class="range-labels"><span>Le 500</span><span>Le 4,000</span></div></div>
+  <fieldset><legend>Room type</legend>
+   <label class="check"><input class="t-single" type="checkbox" name="type" value="single">Single</label>
+   <label class="check"><input class="t-shared" type="checkbox" name="type" value="shared">Shared</label>
+   <label class="check"><input class="t-studio" type="checkbox" name="type" value="studio">Studio</label>
+  </fieldset>
+  <fieldset><legend>Amenities</legend>
+   <label class="check"><input type="checkbox" name="am" value="wifi">Wi-Fi</label>
+   <label class="check"><input type="checkbox" name="am" value="water">Water supply</label>
+   <label class="check"><input type="checkbox" name="am" value="power">Generator / power</label>
+   <label class="check"><input type="checkbox" name="am" value="security">Security</label>
+  </fieldset>
+  <button class="btn block" type="submit">Apply filters</button>
+ </form>
+ <div>
+  <div class="toolbar"><span class="muted">Showing rooms near campus</span>
+   <div><label for="sort" style="position:absolute;left:-9999px">Sort rooms</label><select id="sort"><option>Sort: Price low to high</option><option>Sort: Price high to low</option><option>Sort: Closest to campus</option></select></div></div>
+  <div class="grid3">
+  <article class="card" data-type="single">
+   <a class="photo" href="listing.html"><img src="https://images.unsplash.com/photo-1702255489644-392758161f1f?auto=format&fit=crop&w=1200&h=800&q=80" alt="Hilltop Single Room, a single room in Hill Station" width="1200" height="800" loading="lazy"></a>
+   <div class="card-body">
+    <span class="tag">Single</span>
+    <h3>Hilltop Single Room</h3>
+    <p class="area">Hill Station · 5 min walk to campus</p>
+    <div class="card-foot"><span class="price">Le 1,800 <small>/ month</small></span><a class="btn sm" href="listing.html">View</a></div>
+   </div>
+  </article>
+  <article class="card" data-type="shared">
+   <a class="photo" href="listing.html"><img src="https://images.unsplash.com/photo-1680210851458-b7dc5685e06e?auto=format&fit=crop&w=1200&h=800&q=80" alt="Wilberforce Shared Room, a shared room in Wilberforce" width="1200" height="800" loading="lazy"></a>
+   <div class="card-body">
+    <span class="tag">Shared</span>
+    <h3>Wilberforce Shared Room</h3>
+    <p class="area">Wilberforce · 10 min walk to campus</p>
+    <div class="card-foot"><span class="price">Le 1,100 <small>/ month</small></span><a class="btn sm" href="listing.html">View</a></div>
+   </div>
+  </article>
+  <article class="card" data-type="studio">
+   <a class="photo" href="listing.html"><img src="https://images.unsplash.com/photo-1631049421450-348ccd7f8949?auto=format&fit=crop&w=1200&h=800&q=80" alt="Murray Town Studio, a studio room in Murray Town" width="1200" height="800" loading="lazy"></a>
+   <div class="card-body">
+    <span class="tag">Studio</span>
+    <h3>Murray Town Studio</h3>
+    <p class="area">Murray Town · 15 min to campus</p>
+    <div class="card-foot"><span class="price">Le 3,200 <small>/ month</small></span><a class="btn sm" href="listing.html">View</a></div>
+   </div>
+  </article>
+  <article class="card" data-type="single">
+   <a class="photo" href="listing.html"><img src="https://images.unsplash.com/photo-1509647924673-bbb53e22eeb8?auto=format&fit=crop&w=1200&h=800&q=80" alt="Congo Cross Single Room, a single room in Congo Cross" width="1200" height="800" loading="lazy"></a>
+   <div class="card-body">
+    <span class="tag">Single</span>
+    <h3>Congo Cross Single Room</h3>
+    <p class="area">Congo Cross · 8 min walk to campus</p>
+    <div class="card-foot"><span class="price">Le 1,500 <small>/ month</small></span><a class="btn sm" href="listing.html">View</a></div>
+   </div>
+  </article>
+  <article class="card" data-type="shared">
+   <a class="photo" href="listing.html"><img src="https://images.unsplash.com/photo-1743213993220-f222e90b8e62?auto=format&fit=crop&w=1200&h=800&q=80" alt="Lumley Shared Room, a shared room in Lumley" width="1200" height="800" loading="lazy"></a>
+   <div class="card-body">
+    <span class="tag">Shared</span>
+    <h3>Lumley Shared Room</h3>
+    <p class="area">Lumley · 20 min by taxi</p>
+    <div class="card-foot"><span class="price">Le 950 <small>/ month</small></span><a class="btn sm" href="listing.html">View</a></div>
+   </div>
+  </article>
+  <article class="card" data-type="studio">
+   <a class="photo" href="listing.html"><img src="https://images.unsplash.com/photo-1552858725-2758b5fb1286?auto=format&fit=crop&w=1200&h=800&q=80" alt="Goderich Studio, a studio room in Goderich" width="1200" height="800" loading="lazy"></a>
+   <div class="card-body">
+    <span class="tag">Studio</span>
+    <h3>Goderich Studio</h3>
+    <p class="area">Goderich · 25 min by taxi</p>
+    <div class="card-foot"><span class="price">Le 3,500 <small>/ month</small></span><a class="btn sm" href="listing.html">View</a></div>
+   </div>
+  </article>
+  </div>
+  <nav class="pager" aria-label="Pagination"><a class="on" href="rooms.html" aria-current="page">1</a><a href="rooms.html">2</a><a href="rooms.html">3</a><a href="rooms.html">Next</a></nav>
+ </div>
+</div>
+</main>
+<footer class="site-footer">
+ <div class="wrap">
+  <div class="foot">
+   <a class="logo" href="index.html"><i></i>CampusNest</a>
+   <nav aria-label="Footer">
+    <a href="index.html">Homepage</a><a href="rooms.html">Rooms</a><a href="listing.html">Listing</a><a href="booking.html">Booking</a><a href="about.html">About</a>
+   </nav>
+  </div>
+  <p class="copy">© 2026 CampusNest. Student accommodation made simple. Sample listings for a design project.</p>
+ </div>
+</footer>
+</body>
+</html>
